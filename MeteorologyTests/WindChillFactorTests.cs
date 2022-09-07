@@ -33,7 +33,7 @@ namespace MeteorologyTests
         {
             // Arrange
             Temperature temperature = new(5, Temperature.Scale.Celsius);
-            WindSpeed windSpeed = new(2, WindSpeed.Unit.MilesPerHour);
+            WindSpeed windSpeed = new(2, WindSpeed.Unit.MetersPerSecond);
             string expectedMessage = "Windspeed too low";
 
             // Act
@@ -48,7 +48,7 @@ namespace MeteorologyTests
         {
             // Arrange
             Temperature temperature = new(50, Temperature.Scale.Fahrenheit);
-            WindSpeed windSpeed = new(9, WindSpeed.Unit.MilesPerHour);
+            WindSpeed windSpeed = new(9, WindSpeed.Unit.MetersPerSecond);
             string expectedMessage = "Temperature too high";
 
             // Act

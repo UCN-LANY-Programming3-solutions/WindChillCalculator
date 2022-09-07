@@ -35,5 +35,10 @@ namespace MeteorologyCalculator
         {
             return Math.Round((9d / 5d) * temperature + 32, 1);
         }
+
+        public override string ToString()
+        {
+            return $"Temperature: {_temperature} {_scale}";
+        }
     }
 }

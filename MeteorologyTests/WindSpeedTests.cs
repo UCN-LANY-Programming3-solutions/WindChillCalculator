@@ -28,7 +28,7 @@ namespace MeteorologyTests
         public void TestGetMetersPerSecondNormal()
         {
             // Arrange
-            WindSpeed speed = new(22.3694F, WindSpeed.Unit.MilesPerHour);
+            WindSpeed speed = new(22.3694F, WindSpeed.Unit.MetersPerSecond);
             float mpsExpected = 10;
 
             // Act

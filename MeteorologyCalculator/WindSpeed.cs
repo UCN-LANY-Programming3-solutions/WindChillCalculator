@@ -14,7 +14,7 @@ namespace MeteorologyCalculator
         private readonly float _speed;
         private readonly Unit _unit;
 
-        public float MilesPerHour => _unit == Unit.MilesPerHour ? _speed : _speed * 2.23694F;
+        public float MilesPerHour => _unit == Unit.MetersPerSecond ? _speed : _speed * 2.23694F;
 
         public float MetersPerSecond => _unit == Unit.MeterPerSecond ? _speed : _speed * 0.44704F;
 
@@ -27,7 +27,12 @@ namespace MeteorologyCalculator
         public enum Unit
         {
             MeterPerSecond,
-            MilesPerHour
+            MetersPerSecond
+        }
+
+        public override string ToString()
+        {
+            return $"Wind: {_speed} {_unit}";
         }
     }
 }
