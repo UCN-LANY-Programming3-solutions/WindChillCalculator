@@ -28,6 +28,9 @@ namespace MeteorologyTests
             Assert.Equal(expectedCelsius, celsiusResult, 4);
         }
 
+        // TODO: Create tests that validates that a wind speed too low
+        //       or a too high temperature is rejected
+
         [Fact]
         public void TestCalculateWindChillFactorFailOnLowWindSpeed()
         {
